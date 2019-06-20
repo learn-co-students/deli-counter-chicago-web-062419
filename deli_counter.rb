@@ -14,8 +14,7 @@ end
 
 def take_a_number(line_array, name)
   spot = line_array.size + 1
-  message = "Welcome, #{name}. You are number #{spot} in line."
-  puts message
+  puts "Welcome, #{name}. You are number #{spot} in line."
   line_array << name
 end
 
