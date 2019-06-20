@@ -1,5 +1,3 @@
-# Write your code here.
-katz_deli = []
 def line(array)
   if array.length == 0
     puts "The line is currently empty."
@@ -13,8 +11,7 @@ def line(array)
 end
 
 def take_a_number(line_array, name)
-  spot = line_array.size + 1
-  puts "Welcome, #{name}. You are number #{spot} in line."
+  puts "Welcome, #{name}. You are number #{line_array.size + 1} in line."
   line_array << name
 end
 
@@ -22,8 +19,7 @@ def now_serving(line)
   if line.length == 0
     puts "There is nobody waiting to be served!"
   else
-    message = "Currently serving #{line[0]}."
-    puts message
+    puts "Currently serving #{line[0]}."
     line.shift
   end
 end
